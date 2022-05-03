@@ -43,13 +43,6 @@
 
 ### Q8. `모델의 예측값`과 `X_valid`에 대한 `혼돈 행렬(confusion matrix)` 그리고 `Roc-Auc` 값 출력 하기 
 
-
 ### Q9. `모델의 예측값`과 `X_valid`에 대한 `Roc curve`를 그리기
 
 ### Q10. 학습된 모델의 임계값(threshold)를 변형 해보고 그떄의 정확도(Accuracy)와 Roc-Auc score를 threshold와 같이 출력하시오.(단, [0.10, 0.22, 0.34, 0.46, 0.58, 0.70, 0.82, 0.94] 이다) 
-
-
-
-
-
-
