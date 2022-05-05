@@ -43,9 +43,11 @@
 ### Q5. df 데이터 프레임의 결측치를 `interpolate`을 사용하여 행 단위로 채울고 (이때, 방법은 linear이며, 방향은 쌍방향) `40HZ` 컬럼의 합을 소수4번째 자리까지 구하기 
 
 ### Q6. df 데이터 프레임의 데이터를 X, 라벨(label)을 y로 할당 후 `train_test_split`함수를 사용하여 X_train, X_valid, y_train, y_valid 로 나누고, `X_train`을 기준으로 `X_train` 과 `X_valid` 의 `HIGH_HZ` 컬럼들을 `minmax scaler` 을 적용한 후 `x_valid`의 `4460HZ` 컬럼 `평균값`을 소수4번째 까지 구해 출력하기 
-(이때, 테스트 비율은 0.2이고, random_state는 42로 고정 한다. minmax scaler의 최소값은 0, 최대값은 1로 설정하고 이때에 Data Leakage 문제 조심하도록 한다. (Train으로 학습하고, Test변형 시켜주어야 함 )
+(이때, 테스트 비율은 0.2이고, random_state는 42로 고정 한다. minmax scaler의 최소값은 0, 최대값은 1로 설정)
+(TIPS! 본 과제에는 test 데이터가 없으며, valid data만 있으므로 train : valid = 0.8 : 0.2 로 나누시면 되겠습니다.
+또한,  min_max_scaler에 대해서는  scaler를 학습(fit) 시키고 변형(transform)을 해야되는데, 학습(fit)을 X_train으로 시키고, X_train과 X_valid를 변형(transform) 시키시면 됩니다. 
 
-### Q7. `X_train` 의 모든 변수 와 `y_train` 을 사용하여 `LogisticRegression` 모델을 학습시키고, X_valid를 예측한후, y_valid와 모델의 결과값을 비교하여 정확도(Accuracy)를 출력하시오. 
+### Q7. `X_train` 의 **모든 변수** 와 `y_train` 을 사용하여 `LogisticRegression` 모델을 학습시키고, X_valid를 예측한후, y_valid와 모델의 결과값을 비교하여 정확도(Accuracy)를 출력하시오. 
 
 ### Q8. `모델의 예측값`과 `X_valid`에 대한 `혼돈 행렬(confusion matrix)` 그리고 `Roc-Auc` 값 출력 하기 
 
