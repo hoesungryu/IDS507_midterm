@@ -40,7 +40,7 @@
 
 ### Q4. df 데이터 프레임의 `80HZ` 컬럼  결측값의 개수의 합 은 모두 얼마인가? 
 
-### Q5. df 데이터 프레임의 결측치를 `interpolate`을 사용하여 행 단위로 채울고 (이때, 방법은 linear이며, 방향은 쌍방향) `40HZ` 컬럼의 합을 소수4번째 자리까지 구하기 
+### Q5. df 데이터 프레임의 결측치를 `interpolate`을 사용하여 행 단위로 채울고 (이때, 방법은 linear이며, 방향은 쌍방향) `40HZ` 컬럼의 합을 구하기 
 
 ### Q6. df 데이터 프레임의 데이터를 X, 라벨(label)을 y로 할당 후 `train_test_split`함수를 사용하여 X_train, X_valid, y_train, y_valid 로 나누고, `X_train`을 기준으로 `X_train` 과 `X_valid` 의 `HIGH_HZ` 컬럼들을 `minmax scaler` 을 적용한 후 `x_valid`의 `4460HZ` 컬럼 `평균값`을 소수4번째 까지 구해 출력하기 
 (이때, 테스트 비율은 0.2이고, random_state는 42로 고정 한다. minmax scaler의 최소값은 0, 최대값은 1로 설정)
