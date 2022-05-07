@@ -47,7 +47,7 @@
 (TIPS! 본 과제에는 test 데이터가 없으며, valid data만 있으므로 train : valid = 0.8 : 0.2 로 나누시면 되겠습니다.
 또한,  min_max_scaler에 대해서는  scaler를 학습(fit) 시키고 변형(transform)을 해야되는데, 학습(fit)을 X_train으로 시키고, X_train과 X_valid를 변형(transform) 시키시면 됩니다. 
 
-### Q7. `X_train` 의 **모든 변수** 와 `y_train` 을 사용하여 `LogisticRegression` 모델을 학습시키고, X_valid를 예측한후, y_valid와 모델의 결과값을 비교하여 정확도(Accuracy)를 출력하시오. 
+### Q7. `X_train` 의 **모든 변수**(LOW_HZ,HIGH_HZ,max0 ~ max19 ) 와 `y_train` 을 사용하여 `LogisticRegression` 모델을 학습시키고, X_valid를 예측한후, y_valid와 모델의 결과값을 비교하여 정확도(Accuracy)를 출력하시오. 
 
 ### Q8. `모델의 예측값`과  `혼돈 행렬(confusion matrix)` 그리고 `Roc-Auc` 값 출력 하기 (`confusion_matrix(y_valid, 예측값)`
 
