@@ -49,7 +49,7 @@
 
 ### Q7. `X_train` 의 **모든 변수** 와 `y_train` 을 사용하여 `LogisticRegression` 모델을 학습시키고, X_valid를 예측한후, y_valid와 모델의 결과값을 비교하여 정확도(Accuracy)를 출력하시오. 
 
-### Q8. `모델의 예측값`과 `X_valid`에 대한 `혼돈 행렬(confusion matrix)` 그리고 `Roc-Auc` 값 출력 하기 
+### Q8. `모델의 예측값`과  `혼돈 행렬(confusion matrix)` 그리고 `Roc-Auc` 값 출력 하기 (`confusion_matrix(y_valid, 예측값)`
 
 ### Q9. `모델의 예측값`과 `X_valid`에 대한 `Roc curve`를 그리기
 
