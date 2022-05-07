@@ -45,7 +45,8 @@
 ### Q6. df 데이터 프레임의 데이터를 X, 라벨(label)을 y로 할당 후 `train_test_split`함수를 사용하여 X_train, X_valid, y_train, y_valid 로 나누고, `X_train`을 기준으로 `X_train` 과 `X_valid` 의 `HIGH_HZ` 컬럼들을 `minmax scaler` 을 적용한 후 `x_valid`의 `4460HZ` 컬럼 `평균값`을 소수4번째 까지 구해 출력하기 
 (이때, 테스트 비율은 0.2이고, random_state는 42로 고정 한다. minmax scaler의 최소값은 0, 최대값은 1로 설정)
 (TIPS! 본 과제에는 test 데이터가 없으며, valid data만 있으므로 train : valid = 0.8 : 0.2 로 나누시면 되겠습니다.
-또한,  min_max_scaler에 대해서는  scaler를 학습(fit) 시키고 변형(transform)을 해야되는데, 학습(fit)을 X_train으로 시키고, X_train과 X_valid를 변형(transform) 시키시면 됩니다. 
+또한,  min_max_scaler에 대해서는  scaler를 학습(fit) 시키고 변형(transform)을 해야되는데, 학습(fit)을 X_train으로 시키고, X_train과 X_valid를 변형(transform) 시키시면 됩니다. )
+(LOW_HZ, HIGH_HZ 전체를 min-max 하셔도 무관합니다. )
 
 ### Q7. `X_train` 의 **모든 변수**(LOW_HZ,HIGH_HZ,max0 ~ max19 ) 와 `y_train` 을 사용하여 `LogisticRegression` 모델을 학습시키고, X_valid를 예측한후, y_valid와 모델의 결과값을 비교하여 정확도(Accuracy)를 출력하시오. 
 
